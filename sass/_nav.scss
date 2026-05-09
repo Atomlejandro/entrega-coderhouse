@@ -1,0 +1,29 @@
+@use 'variables';
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: nav;
+    padding: 20px;
+    background-color: variables.$color-fondo;
+    font-size: 18px;
+
+
+.nav-list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+    .logo{
+    width: 150px;
+    height: auto;
+}
+
+
+
+}
+
+
+
+

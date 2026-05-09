@@ -1,0 +1,10 @@
+.proyecto-image {
+    width: 100%;
+    height: auto;
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
