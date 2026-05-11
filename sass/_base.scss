@@ -1,3 +1,5 @@
+@use 'variables';
+
 @font-face{
     font-family: 'SN Pro';
     src: url('../fonts/SNPro-VariableFont_wght.ttf');
@@ -18,4 +20,16 @@ body{
 a{
     text-decoration: none;
     color: black;
+}
+
+%card-base {
+    background-color: variables.$color-blanco;
+    border-top: 4px solid variables.$color-lila;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+      p {
+        color: variables.$color-gris-oscuro;
+        font-size: 14px;
+    }
 }

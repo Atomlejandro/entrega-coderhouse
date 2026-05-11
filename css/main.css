@@ -16,6 +16,17 @@ a {
   color: black;
 }
 
+.card-servicio, .proyecto-card {
+  background-color: #FFFFFF;
+  border-top: 4px solid #B8A9C9;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.card-servicio p, .proyecto-card p {
+  color: #4A4A4A;
+  font-size: 14px;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -74,18 +85,8 @@ a {
   color: #B8A9C9;
 }
 
-.proyecto-card {
-  background-color: #FFFFFF;
-  border-top: 4px solid #B8A9C9;
-  padding: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
 .proyecto-card h2 {
   color: #4A4A4A;
-}
-.proyecto-card p {
-  color: #4A4A4A;
-  font-size: 14px;
 }
 
 .footer {
@@ -113,8 +114,7 @@ a {
   color: #FFFFFF;
   position: relative;
 }
-
-.hero-fondo {
+.hero .hero-fondo {
   background-color: rgba(152, 152, 152, 0.123);
   padding: 20px;
   border-radius: 10px;
@@ -149,12 +149,73 @@ h2 {
   background-color: #9B8CBF;
 }
 
-.card-container {
-  display: flex;
-  justify-content: center;
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  flex-wrap: wrap;
+  padding: 0 40px;
+}
+
+.card-servicio h3 {
+  color: #4A4A4A;
+}
+
+.hero-nosotros {
+  background-image: url("../images/fondo-nosotros.png");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  position: relative;
+}
+.hero-nosotros .hero-fondo {
+  background-color: rgba(152, 152, 152, 0.123);
   padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  display: flex;
+  inset: 0;
+}
+
+.hero-explain {
+  background-color: #FFFFFF;
+  padding: 40px;
+  text-align: center;
+}
+.hero-explain h2 {
+  color: #B8A9C9;
+  margin-bottom: 20px;
+}
+.hero-explain p {
+  color: #4A4A4A;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.nosotros-logros {
+  background-color: #FFFFFF;
+  padding: 45px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.nosotros-logros .logro {
+  width: 100%;
+}
+.nosotros-logros .logro h3 {
+  color: #B8A9C9;
+  margin-bottom: 10px;
+}
+.nosotros-logros .logro p {
+  color: #4A4A4A;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

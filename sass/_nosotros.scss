@@ -1,0 +1,48 @@
+@use "variables";
+
+@use "mixins";
+@use "base";
+
+.hero-nosotros{
+    @include mixins.hero('../images/fondo-nosotros.png');
+}
+
+.hero-explain{
+
+    background-color: variables.$color-blanco;
+    padding: 40px;
+    text-align: center;
+
+    h2 {
+        color: variables.$color-lila;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: variables.$color-gris-oscuro;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+}
+
+.nosotros-logros {
+    background-color: variables.$color-blanco;
+    padding: 45px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    .logro {
+        width: 100%;
+
+        h3 {
+            color: variables.$color-lila;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: variables.$color-gris-oscuro;
+            font-size: 16px;
+        }
+    }
+}

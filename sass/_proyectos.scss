@@ -1,4 +1,7 @@
 @use 'variables';
+@use 'base';
+@use 'mixins';
+
 
 .proyecto-image {
     width: 100%;
@@ -26,17 +29,13 @@
 }
 
 .proyecto-card {
-    background-color: variables.$color-blanco;
-    border-top: 4px solid variables.$color-lila;
-    padding: 16px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+   @extend %card-base;
+
 
     h2 {
         color: variables.$color-gris-oscuro;
     }
 
-    p {
-        color: variables.$color-gris-oscuro;
-        font-size: 14px;
-    }
+   
 }
