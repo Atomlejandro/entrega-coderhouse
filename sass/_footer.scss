@@ -1,0 +1,16 @@
+@use 'variables';
+
+.footer{
+    display: flex;
+    background-color: variables.$color-gris-oscuro;
+    color: variables.$color-blanco;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+}

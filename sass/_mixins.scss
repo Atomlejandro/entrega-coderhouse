@@ -1,0 +1,13 @@
+@use 'variables';
+@mixin btn {
+    background-color: variables.$color-lila;
+    color: variables.$color-blanco;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+
+     &:hover {
+        background-color: variables.$color-lila-oscuro;
+    }
+}
