@@ -1,0 +1,113 @@
+@use "variables";
+
+
+.skills-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    margin: 20px;
+    border: 1px solid variables.$color-lila;
+    border-radius: 25px;
+}
+
+.titulo-habilidades{
+    grid-column: 1/4;
+    text-align: center;
+    font-size: 32px;
+    color: variables.$color-rosa;
+    margin-bottom: 0;
+}
+
+.skill-logo{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+   
+}
+.skills-buttons{
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+    justify-items: start;
+    padding: 20px;
+   
+}
+
+.skill-btn{
+    padding: 10px 20px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: variables.$color-lila;
+    color: white;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+.skill-btn.active{
+    background-color: variables.$color-rosa;
+}
+
+.skill-info{
+   padding: 20px;
+
+}
+
+.skill-panel{
+    margin-top: 20px;
+    display: none;
+    gap: 20px;
+    align-items: center;
+    grid-column: 2/4;
+
+}
+
+.skill-panel.active{
+  display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.barra-contenedor{
+    width: 100%;
+    background-color: variables.$color-lila;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.barra-relleno{
+    height: 20px;
+    background-color: variables.$color-rosa;
+    transition: width 0.8s ease;
+}
+
+.habilidades-wrapper{
+    display: flex;
+ 
+}
+.habilidades-complemento{
+    flex: 1;
+    padding: 40px;
+}
+
+@media (max-width: 768px) {
+    .habilidades-wrapper {
+        flex-direction: column;
+    }
+
+    .skills-section {
+        max-width: 100%;
+        margin: 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .skill-panel {
+        grid-column: 1;
+    }
+
+    .skill-panel.active {
+        grid-template-columns: 1fr;
+    }
+}

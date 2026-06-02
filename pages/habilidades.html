@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre las habilidades técnicas de Ana María, arquitecta especializada en Revit, AutoCAD, SketchUp, Photoshop e Illustrator. Conoce su enfoque de trabajo y cómo integra la tecnología en sus proyectos arquitectónicos.">
     <title>Habilidades</title>
     <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/nav.js" defer></script>
     </head>
-<body>
+<body class="body-habilidades">
     
     <div class="container">
 
-    <nav class="nav">
-                <img src="../images/logo.png" alt="logo" class="logo">
+    <nav class="nav" aria-label="Navegación principal">
+                <img src="../images/logo.png" alt="Logo AB Arquitectura" class="logo">
+
+            <button class="hamburger" aria-label="Menú de navegación" aria-expanded="false" aria-controls="nav-list">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                </button>   
     <ul class="nav-list">
        <li><a href="../index.html">Inicio</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
@@ -22,10 +30,91 @@
 </nav>
        
     </div>
+<div class="habilidades-wrapper">
+    <section class="skills-section">
+        <h2 class="titulo-habilidades">Habilidades</h2>
+    <!-- Botones de navegación -->
+    <div class="skills-buttons">
+        <button class="skill-btn active" data-tool="revit" aria-label="Ver habilidades de Revit">Revit</button>
+        <button class="skill-btn" data-tool="autocad" aria-label="Ver habilidades de AutoCAD">AutoCAD</button>
+        <button class="skill-btn" data-tool="sketchup" aria-label="Ver habilidades de SketchUp">SketchUp</button>
+        <button class="skill-btn" data-tool="photoshop" aria-label="Ver habilidades de Photoshop">Photoshop</button>
+        <button class="skill-btn" data-tool="illustrator" aria-label="Ver habilidades de Illustrator">Illustrator</button>
+    </div>
 
+    <!-- Paneles de contenido -->
+    <div class="skill-panel active" id="revit">
+        <img src="../images/logos/autodesk-revit-icon.svg" alt="Revit" class="skill-logo">
+        <div class="skill-info">
+       
+        <div class="barra-contenedor">
+            <div class="barra-relleno" style="width: 0%" data-width="85%"></div>
+        </div>
+        <span class="skill-porcentaje">85%</span>
+         <p class="skill-desc">Software BIM para modelado arquitectónico 3D y documentación técnica.</p>
+    </div>
+</div>
+    <div class="skill-panel" id="autocad">
+        <img src="../images/logos/autocad-icon.svg" alt="AutoCAD" class="skill-logo">
+
+        <div class="skill-info">
+     
+        <div class="barra-contenedor">
+            <div class="barra-relleno" style="width: 0%" data-width="90%"></div>
+        </div>
+        <span class="skill-porcentaje">90%</span>
+           <p class="skill-desc">Herramienta de dibujo técnico 2D y 3D para planos arquitectónicos.</p>
+    </div>
+    </div>
+
+    <div class="skill-panel" id="sketchup">
+        <img src="../images/logos/sketchup-icon.svg" alt="SketchUp" class="skill-logo">
+
+          <div class="skill-info">
+      
+        <div class="barra-contenedor">
+            <div class="barra-relleno" style="width: 0%" data-width="90%"></div>
+        </div>
+        <span class="skill-porcentaje">90%</span>
+          <p class="skill-desc">Herramiento de modelado 3D</p>
+    </div>
+    </div>
+    <div class="skill-panel" id="photoshop">
+        <img src="../images/logos/adobe-photoshop-icon.svg" alt="Photoshop" class="skill-logo">
+
+          <div class="skill-info">
+      
+        <div class="barra-contenedor">
+            <div class="barra-relleno" style="width: 0%" data-width="90%"></div>
+        </div>
+        <span class="skill-porcentaje">90%</span>
+                <p class="skill-desc">Programa de edición de imagenes.</p>
+    </div>
+    </div>
+    <div class="skill-panel" id="illustrator">
+        <img src="../images/logos/adobe-illustrator-icon.svg" alt="Illustrator" class="skill-logo">
+
+          <div class="skill-info">
+      
+
+        <div class="barra-contenedor">
+            <div class="barra-relleno" style="width: 0%" data-width="90%"></div>
+        </div>
+        <span class="skill-porcentaje">90%</span>
+                <p class="skill-desc">Herramiento de edición de imagenes.</p>
+    </div>
+    </div>
+</section>
+
+<div class="habilidades-complemento">
+    <h2>Enfoque de trabajo</h2>
+    <p>El dominio técnico de las herramientas es solo el punto de partida. Ana María integra cada software como un medio para materializar ideas, no como un fin en sí mismo. Su proceso creativo combina precisión técnica con sensibilidad humana: cada plano parte de entender a las personas que habitarán el espacio.</p>
+    <p>Trabaja con una metodología iterativa, revisando y refinando cada propuesta hasta que el diseño responde tanto a las necesidades funcionales como al contexto cultural y ambiental del proyecto. La tecnología, en su enfoque, es una herramienta al servicio de la arquitectura sostenible e inclusiva.</p>
+</div>
+</div>
 <footer class="footer">
     <div>
-<img src="../images/logo.png" alt="logo" class="logo">
+<img src="../images/logo.png" alt="Logo AB Arquitectura" class="logo">
 
     </div>
   <p>&copy; 2026 AB Arquitectura Todos los derechos reservados.</p>
@@ -36,5 +125,8 @@
    
 
 </footer>
+   <script src="../js/habilidades.js"> </script>
 </body>
+
+ 
 </html>
