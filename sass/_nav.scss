@@ -53,19 +53,24 @@
     }
 
     .nav .nav-list {
-        display: none;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
     width: 100%;
     flex-direction: column;
     gap: 10px;
-    padding: 20px 0;
+    padding: 0px 0;
     align-items: flex-start;
     padding-left: 10px;
+    display: flex; // siempre flex, pero oculto con max-height
 
-
-        &.open {
-            display: flex;
-        }
+    &.open {
+   
+        max-height: 300px;
+        padding: 10px 0;
     }
+}
 }
 
 
