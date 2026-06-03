@@ -62,14 +62,15 @@
     margin: 0 auto;
     padding-inline: 20px;
     display: flex;
+    flex-direction: column;
    
     justify-content: space-around;
 .barra-contenedor {
 background-color: white;
     width: 100%;
      border: 1px solid #C3C3C3;
-padding: auto;
-    margin: 20px;
+    margin: 10px 0;
+
 
 
 .barra-relleno{
@@ -118,4 +119,29 @@ padding: auto;
         }
     }
 
+}
+
+@media (max-width: 768px) {
+    .proyectos-grid{
+        grid-template-columns: 1fr;
+    }
+    .nosotros-logros {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .habilidades-contenedor{
+        flex-direction: column;
+        .grafica-habilidades, .descripcion-habilidades{
+            width: 100%;
+            padding: 0;
+        }
+    }
+    .habilidades {
+        flex-direction: column;
+        padding-inline: 0;
+        .barra-contenedor {
+            margin: 10px 0;
+            width: 100%;
+        }
+    }
 }
